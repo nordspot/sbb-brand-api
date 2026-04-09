@@ -1,0 +1,20 @@
+name = "sbb-brand-api"
+main = "src/index.ts"
+compatibility_date = "2026-04-08"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "sbb-brand-index"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sbb-brand-library"
+database_id = "dd470b9e-d176-4695-aec0-09cc24caf2d6"
+
+[vars]
+BRAND_NAME = "SBB/CFF/FFS"
+BRAND_VERSION = "1.0.0"

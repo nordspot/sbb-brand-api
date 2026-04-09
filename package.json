@@ -1,0 +1,17 @@
+{
+  "name": "sbb-brand-api",
+  "version": "1.0.0",
+  "description": "SBB/CFF/FFS Brand Library API — Semantic brand knowledge base for the .brand ecosystem",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "bootstrap": "curl -X POST http://localhost:8787/api/bootstrap",
+    "create-index": "wrangler vectorize create sbb-brand-index --dimensions=768 --metric=cosine"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260401.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
+  }
+}
